@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<info>
+    <id>extcalsync</id>
+    <name>External Calendar Sync</name>
+    <description>Syncs external calendar</description>
+    <version>0.1</version>
+    <licence>GPL</licence>
+    <author>dasz.at OG</author>
+    <require>6</require>
+</info>
