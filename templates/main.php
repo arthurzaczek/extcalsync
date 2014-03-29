@@ -9,6 +9,18 @@
 		</ul>
 	</div>
 	<div id="app-content">
-		<p><?php p($_['msg']); ?></p>
+		<h1><?php p($_['msg']); ?></h1>
+		<h2>My own calendar</h2>
+		<ul>
+<?php 
+		$option_calendars = OC_Calendar_Calendar::allCalendars(OCP\USER::getUser());
+		for($i = 0; $i < count($option_calendars); $i++) {
+			$cal = $option_calendars[$i]; 
+?>
+			<li><?php p($cal['displayname']); ?>
+<?php			
+		} 
+?>
+		</ul>
 	</div>
 </div>
