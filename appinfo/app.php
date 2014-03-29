@@ -20,3 +20,5 @@
     // navigation or on the settings page of your app
     'name' => 'Calendar sync Admin'
 ));
+
+\OCP\BackgroundJob::addRegularTask('OCA\ExtCalSync\Backgroundjob\Task', 'run');
